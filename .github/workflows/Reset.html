@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Boys University</title>
+<style>
+:root {
+  --primary-color: #28a745; /* Green */
+  --primary-hover: #1e7e34; /* Darker Green */
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0d0d0d, #1c1c1c);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navigation */
+header {
+  background: #111;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Banner */
+.hero {
+  background: url('https://images.unsplash.com/photo-1608382541692-0e027b681df3?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: var(--primary-hover);
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.section p, .section ul {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section ul {
+  list-style: none;
+}
+
+.section ul li {
+  padding: 0.5rem 0;
+}
+
+/* Hero Cards */
+.heroes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hero-card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.hero-card h3 {
+  color: #facc15;
+  margin-bottom: 0.5rem;
+}
+
+.hero-card p {
+  color: #aaa;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background: #2c2c2c;
+  color: white;
+  font-size: 1rem;
+}
+
+form button {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: var(--primary-hover);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #111;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+  <nav class="navbar">
+    <div class="logo">The Boys University</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#heroes">Faculty</a></li>
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h2>Training Tomorrow's Supes… For Better or Worse.</h2>
+  <p>Where power meets ambition — and not always the good kind.</p>
+  <a href="#admissions" class="cta-button">Apply Now</a>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>Founded under the watchful eye of Vought International, The Boys University is the premier institution for developing the next generation of Supes — whether you're here to save the world or just your brand image.</p>
+</section>
+
+<!-- Programs -->
+<section id="programs" class="section">
+  <h2>Academic Programs</h2>
+  <ul>
+    <li>Public Relations & Hero Branding</li>
+    <li>Combat Training & Collateral Management</li>
+    <li>Compound V Science & Enhancement Studies</li>
+    <li>Media Manipulation & Crisis Control</li>
+  </ul>
+</section>
+
+<!-- Faculty -->
+<section id="heroes" class="section">
+  <h2>Meet the Faculty</h2>
+  <div class="heroes">
+    <div class="hero-card">
+      <h3>Homelander</h3>
+      <p>Professor of Power & Public Image</p>
+    </div>
+    <div class="hero-card">
+      <h3>Queen Maeve</h3>
+      <p>Combat Strategy & Hero Ethics (Optional)</p>
+    </div>
+    <div class="hero-card">
+      <h3>A-Train</h3>
+      <p>Speed Dynamics & Endorsement Deals</p>
+    </div>
+  </div>
+</section>
+
+<!-- Admissions -->
+<section id="admissions" class="section">
+  <h2>Admissions</h2>
+  <p>Think you’ve got what it takes to be the next big Supe? Whether you’re a Compound V prodigy or just really good at smiling for the cameras, we’ve got a place for you. Apply now — before someone else takes your spotlight.</p>
+  <a href="#contact" class="cta-button">Contact Admissions</a>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message or Special Ability..." rows="5"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 The Boys University. Powered by Vought International. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
